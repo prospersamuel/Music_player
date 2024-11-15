@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+.contain{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.music-player{
+    background: linear-gradient(90deg, #30e9ff, #0d0551);
+    padding: 25px 35px;
+    width: 60%;
+    text-align: center;
+    border-radius: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+nav .circle{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 40px;
+    background: #fff;
+    color: #f53192;
+    box-shadow: 0 10px 30px #053c559d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle img{
+    width: 20px;
+}
+.song-img{
+    width: 180px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+}
+.music-player h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px;
+}
+ .music-player p{
+font-weight: bold;
+color: #fff;
+ }
+ #progress{
+    -webkit-appearance: none;
+    width: 80%;
+    height: 8px;
+    background: #30e9ff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px 0;
+ }
+ #progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #30e9ff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #0d0551;
+    box-shadow: 0 5px 5px #053c559d;
+
+ }
+ .pBar{
+    background-color: aliceblue;
+    width: 70%;
+    height: 40px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70px;
+ }
+ .controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+ }
+ .controls div{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px #053c55;
+    cursor: pointer;
+ }
+ div img{
+    width: 40px;
+ }
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    background: #0d0551;
+    color: #fff;
+}

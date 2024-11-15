@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contain w-100 bg-dark">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <img src="media/angle2.png" alt="">
+                </div>
+
+
+                <div class="circle">
+                    <img src="media/bars.png" alt="">
+                </div>
+            </nav>
+            <img src="media/image.png" class="song-img">
+            <h1>Free me</h1>
+            <p>42 dugg</p>
+            <audio id="song" src="media/Free Me.mp3"></audio ><br>
+            <div class="pBar">
+                <input type="range" id="progress" value="0">
+            </div>
+            <div class="controls">
+                <div><img src="media/backward.png" id="back"></div>
+                <div><img onclick="playPause()" id="ctrlIcon" src="media/pause.png" class="pause"></div>
+                <div><img src="media/forward.png" id="next"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="player.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
